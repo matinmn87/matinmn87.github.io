@@ -1,0 +1,254 @@
+::-moz-selection {
+    color: white;
+    background: #002642;
+}
+
+::selection {
+    color: white;
+    background: #002642;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.right-side {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+
+    padding: 20px;
+
+    background-color: #e7e7e7;
+
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.anim-shadow {
+    padding: 20px;
+    /* border: 2px solid #ffffff; */
+    border-radius: 20px;
+    transition: all 0.3s ease-out 100ms;
+}
+
+.anim-shadow:hover {
+    /* border: 5px solid #002642; */
+    box-shadow: 0px 0px 30px 0px #dadada;
+    border-radius: 20px;
+}
+
+.name {
+    font-weight: 700;
+    text-align: center;
+    color: #002642;
+}
+
+.rs-title {
+    font-weight: bolder;
+    color: #002642;
+}
+
+h3 {
+    color: #002642;
+    font-weight: bolder;
+}
+
+.body-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a.underline {
+    text-decoration: none;
+    position: relative;
+    color: #92afd7;
+    transition: all 0.5s;
+}
+
+a.underline:hover {
+    color: #3b6fb8;
+    transition: all 0.5s;
+}
+
+a.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c5d1eb;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    a.underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+a.sm-link {
+    fill: #002642;
+    text-decoration: none;
+
+    transition: 0.3s all;
+}
+
+a.sm-link:hover {
+    fill: #3b6fb8;
+    padding: 15px;
+
+    transition: 0.3s all ;
+}
+
+/* Progress */
+
+.skill {
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px red; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.2),
+        -0.5px -0.5px 0px rgba(0, 0, 0, 0.2),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+    color: #555;
+}
+
+circle.progress-unity {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    stroke-dashoffset: 472;
+    animation: circle-progress-anim-unity 2s linear forwards;
+}
+
+@keyframes circle-progress-anim-unity {
+    100% {
+        stroke-dashoffset: 95;
+    }
+}
+
+circle.progress-asp {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    stroke-dashoffset: 472;
+    animation: circle-progress-anim-asp 2s linear forwards;
+}
+
+@keyframes circle-progress-anim-asp {
+    100% {
+        stroke-dashoffset: 236;
+    }
+}
+
+circle.progress-wp {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    stroke-dashoffset: 472;
+    animation: circle-progress-anim-wp 2s linear forwards;
+}
+
+@keyframes circle-progress-anim-wp {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+div.circle-progressbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sahel';
+
+    /* background: #e3edf7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+svg.cr-progressbar {
+    position: absolute;
+}
+
+.progress-desc {
+    font-weight: bolder;
+}
+
+.cr-prog-box {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.cr-prog-box-all {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+div.all-skils-all,
+.all-pub-skils-all {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+div.all-skils-all {
+    text-align: left;
+}
+
+div.bg-info {
+    background: -webkit-linear-gradient(to right, #3b6fb8, #92afd7) !important;
+    background: -o-linear-gradient(to right, #3b6fb8, #92afd7) !important;
+    background: -moz-linear-gradient(to right, #3b6fb8, #92afd7) !important;
+    background: linear-gradient(to right, #3b6fb8, #92afd7) !important;
+}
+
+li {
+    list-style: url("bullet.svg") circle;
+}
+
+footer {
+    background: #eeeff1;
+    padding-right: 95px;
+    padding-left: 95px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.text-left-footer {
+    text-align: left;
+}
